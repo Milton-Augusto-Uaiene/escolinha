@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Escolar</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" /> 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+
+
+  <!--====================== Navbar Menu ===============================--->
+
+   <nav class="navbar navbar-expand-lg container">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" style="color: var(--laranja);">
+            <h1 class="m-0 laranja"><i class="fa fa-book-reader me-3"></i>SCHOOL</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse logo" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" style="color: var(--laranja);">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="classes.html">Turmas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Páginas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="instituicao.html">Sobre a Instituição</a></li>
+                <li><a class="dropdown-item" href="prof.html">Nossos Professores</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="localizacao.html">Localização</a>
+            </li>
+          </ul>
+          <span>
+            <a href="contacto.html" class="btm d-flex">Contacte-nos<i class="fa fa-arrow-right ms-3"></i></a>
+          </span>
+        </div>
+      </div>
+   </nav>
+
+  <!--======================= Cabeçalho ================================-->
+
+  <div id="carouselExampleInterval" class="carousel slide cabeca" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="img/carousel-1.jpg" class="d-block w-100 img-fluid">
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-10 col-lg-8">
+                <h1 class="display-2 text-white animated slideInDown mb-4">O Melhor Colégio Para Seu Filho</h1>
+                <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                <a href="classes.html" class="btb">Nossas Turmas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="img/carousel-2.jpg" class="d-block w-100 img-fluid">
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-10 col-lg-8">
+                <h1 class="display-2 text-white animated slideInDown mb-4">A Melhor Educação Requer Bons Instrutores</h1>
+                <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                <a href="classes.html" class="btb">Nossas Turmas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+   <!--======================= Instalacoes =============================-->
+
+  <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Sobre a Instituição</h1>
+                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-primary">
+                                <i class="fa fa-bus-alt fa-3x text-primary"></i>
+                            </div>
+                            <div class="facility-text bg-primary">
+                                <h3 class="text-primary mb-3">Transporte Escolar</h3>
+                                <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-success">
+                                <i class="fa fa-futbol fa-3x text-success"></i>
+                            </div>
+                            <div class="facility-text bg-success">
+                                <h3 class="text-success mb-3">Parque Infantil</h3>
+                                <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-warning">
+                                <i class="fa fa-home fa-3x text-warning"></i>
+                            </div>
+                            <div class="facility-text bg-warning">
+                                <h3 class="text-warning mb-3">Cantina</h3>
+                                <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-info">
+                                <i class="fa fa-chalkboard-teacher fa-3x text-info"></i>
+                            </div>
+                            <div class="facility-text bg-info">
+                                <h3 class="text-info mb-3">Jogos</h3>
+                                <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+  <!--============================== Sobre =============================-->
+
+  <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4">Saiba Mais Sobre Nosso Trabalho E Nossas Atividades</h1>
+                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos, ipsum labore duo duo sit no sea diam. Et dolor et kasd ea. Eirmod diam at dolor est vero nonumy magna.</p>
+                        <div class="row g-4 align-items-center">
+                            <div class="col-sm-6">
+                                <a class="btm" href="">Saiba Mais</a>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle flex-shrink-0" src="img/fundador.jpg" style="width: 50px; height: 50px; object-fit: cover;">
+                                    <div class="ms-3">
+                                        <h6 class="mb-1" style="color: var(--laranja);">Aline Carlos</h6>
+                                        <small>Fundador</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row">
+                            <div class="col-12 text-center sobre-fot">
+                                <img class="img-fluid w-75 p-3" src="img/img-1.jpg" style="object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+   <div class="container-xxl py-6">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-certificate fa-4x laranja mb-4" style="color: var(--laranja);"></i>
+                        <p class="mb-2">Anos De Experiência</p>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">20</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-users fa-4x laranja mb-4" style="color: var(--laranja);"></i>
+                        <p class="mb-2">Professionais Habilidosos</p>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">25</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa-solid fa-graduation-cap fa-4x laranja mb-4" style="color: var(--laranja);"></i>
+                        <p class="mb-2">Total Graduados</p>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">135</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa-solid fa-star fa-4x laranja mb-4" style="color: var(--laranja);"></i>
+                        <p class="mb-2">Ensino De Qualidade</p>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">100%</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+
+  <!--============================== Classes =============================-->
+
+  <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Nossas Turmas</h1>
+                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/classes-1.jpg">
+                            </div>
+                            <div class="rounded p-4 pt-5 mt-n5" style="background-color: #ffeff2;">
+                                <a class="d-block text-center h3 mt-3 mb-4" id="arte" href="">Arte & Desenho</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="mb-1">Júlio Carlos</h6>
+                                            <small>Professor</small>
+                                        </div>
+                                    </div>
+                                    <span class="text-white rounded-pill py-2 px-3" href="" style="background-color: var(--laranja);"><i class="fa-solid fa-thumbs-up"></i></span>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Idade:</h6>
+                                            <small>3-5 Anos</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Horário:</h6>
+                                            <small>9h-10h</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Capacidae:</h6>
+                                            <small>30 Crianças</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/classes-2.jpg" alt="">
+                            </div>
+                            <div class="rounded p-4 pt-5 mt-n5" style="background-color: #ffeff2;">
+                                <a class="d-block text-center h3 mt-3 mb-4" id="arte" href="">Aula de Pintura</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="img/fundador.jpg" alt="" style="width: 45px; height: 45px; object-fit: cover;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Júlio Andre</h6>
+                                            <small>Professor</small>
+                                        </div>
+                                    </div>
+                                    <span class="text-white rounded-pill py-2 px-3" href="" style="background-color: var(--laranja);"><i class="fa-solid fa-thumbs-up"></i></span>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Idade:</h6>
+                                            <small>3-5 Anos</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Horário:</h6>
+                                            <small>9h-10h</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Capacidade:</h6>
+                                            <small>30 Crianças</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="classes-item">
+                            <div class="rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/classe3.jpg" alt="" style="height: 235px; object-fit: cover;">
+                            </div>
+                            <div class="rounded p-4 pt-5 mt-n5" style="background-color: #ffeff2;">
+                                <a class="d-block text-center h3 mt-3 mb-4" id="arte" href="">Atletismo & Dança</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="img/fundador.jpg" alt="" style="width: 45px; height: 45px; object-fit: cover;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Paulo Dário</h6>
+                                            <small>Professor</small>
+                                        </div>
+                                    </div>
+                                    <span class="text-white rounded-pill py-2 px-3" href="" style="background-color: var(--laranja);"><i class="fa-solid fa-thumbs-up"></i></span>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Professor:</h6>
+                                            <small>3-5 Idade</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Horário:</h6>
+                                            <small>9h-10h</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Capacidade:</h6>
+                                            <small>30 Crianças</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/classe4.jpg" alt="" style="height: 235px; object-fit: cover;">
+                            </div>
+                            <div class="rounded p-4 pt-5 mt-n5" style="background-color: #ffeff2;">
+                                <a class="d-block text-center h3 mt-3 mb-4" id="arte" href="">Linguas & Prática</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="img/fundador.jpg" alt="" style="width: 45px; height: 45px; object-fit: cover;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Pedro Pedro</h6>
+                                            <small>Professor</small>
+                                        </div>
+                                    </div>
+                                    <span class="text-white rounded-pill py-2 px-3" href="" style="background-color: var(--laranja);"><i class="fa-solid fa-thumbs-up"></i></span>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Idade:</h6>
+                                            <small>3-5 Anos</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Horário:</h6>
+                                            <small>9h-10h</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Capacidade:</h6>
+                                            <small>30 Crianças</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/classe5.jpg" alt="" style="height: 235px; object-fit: cover;">
+                            </div>
+                            <div class="rounded p-4 pt-5 mt-n5" style="background-color: #ffeff2;">
+                                <a class="d-block text-center h3 mt-3 mb-4" id="arte" href="">Arte & História</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="img/fundador.jpg" alt="" style="width: 45px; height: 45px; object-fit: cover;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Dário Gomes</h6>
+                                            <small>Professor</small>
+                                        </div>
+                                    </div>
+                                    <span class="text-white rounded-pill py-2 px-3" href="" style="background-color: var(--laranja);"><i class="fa-solid fa-thumbs-up"></i></span>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Idade:</h6>
+                                            <small>3-5 Anos</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Horário:</h6>
+                                            <small>9h-10h</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Capacidade:</h6>
+                                            <small>30 Crianças</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="classes-item">
+                            <div class="rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/classe6.jpg" alt="" style="height: 235px; object-fit: cover;">
+                            </div>
+                            <div class="rounded p-4 pt-5 mt-n5" style="background-color: #ffeff2;">
+                                <a class="d-block text-center h3 mt-3 mb-4" id="arte" href="">Matemática</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="img/fundador.jpg" alt="" style="width: 45px; height: 45px; object-fit: cover;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Milton Augusto</h6>
+                                            <small>Professor</small>
+                                        </div>
+                                    </div>
+                                    <span class="text-white rounded-pill py-2 px-3" href="" style="background-color: var(--laranja);"><i class="fa-solid fa-thumbs-up"></i></span>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Idade:</h6>
+                                            <small>3-5 Anos</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Horário:</h6>
+                                            <small>9h-10h</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Capacidade:</h6>
+                                            <small>30 Crianças</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  </div>
+  
+  <!--============================== Ligar =============================-->    
+
+   <div class="container-xxl my-6 py-5 pt-0" style="background-color: #f2cd4f;">
+        <div class="container">
+            <div class="text-light rounded-bottom p-5 my-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 mb-0">O Melhor Cantinho Para Seu Filho</h1>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                        <div class="d-inline-flex align-items-center text-start">
+                            <i class="fa fa-phone-alt fa-4x flex-shrink-0"></i>
+                            <div class="ms-4">
+                                <p class="fs-5 fw-bold mb-0">Liga-nos</p>
+                                <p class="fs-1 fw-bold mb-0">+258 84 000 0000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+  
+
+  <!--================================= Team ===============================--> 
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2"></p>
+                <h1 class="display-6 mb-4">Nossos Formadores</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <img class="img-fluid" src="img/fundador.jpg" alt="">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>Anna Maria</h5>
+                                <span>Professora de História</span>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <img class="img-fluid" src="img/equipa3.jpg" alt="">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>Milton Augusto</h5>
+                                <span>Professor de Matemática</span>
+                            </div>
+                            <div class="team-social laranja">
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <img class="img-fluid" src="img/equipa2.jpg" alt="">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>júlia André</h5>
+                                <span>Professora de Inglês</span>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <img class="img-fluid" src="img/equipa4.jpg" alt="">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>Ramos Pedro</h5>
+                                <span>Professor de Artes Visuais</span>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==================== Testemunhas =================-->
+    <div class="tett">
+        <h1 class="display-6 mb-4">Testemunhas</h1>
+    <div class="containerr">
+        <div class="testemunhas">
+            <div class="testemunha-text">
+                <div class="uso-text">
+                    <i class="fa-solid fa-quote-left kmk"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum orci elit, sed rhoncus tortor ultricies a. Cras nec augue dolor. Phasellus at odio neque. Vestibulum bibendum velit sed mi consequat euismod. Nunc ultrices, urna sed lacinia condimentum, metus sem faucibus tellus</p>
+                    <span>Artur David</span>
+                </div>
+                <div class="uso-text active-text">
+                    <i class="fa-solid fa-quote-left kmk"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum orci elit, sed rhoncus tortor ultricies a. Cras nec augue dolor. Phasellus at odio neque. Vestibulum bibendum velit sed mi consequat euismod. Nunc ultrices, urna sed lacinia condimentum, metus sem faucibus tellus</p>
+                    <span>Sheila Dias</span>
+                </div>
+                <div class="uso-text">
+                    <i class="fa-solid fa-quote-left kmk"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum orci elit, sed rhoncus tortor ultricies a. Cras nec augue dolor. Phasellus at odio neque. Vestibulum bibendum velit sed mi consequat euismod. Nunc ultrices, urna sed lacinia condimentum, metus sem faucibus tellus</p>
+                    <span>Milton Uaiene</span>
+                </div>
+                <div class="uso-text">
+                    <i class="fa-solid fa-quote-left kmk"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum orci elit, sed rhoncus tortor ultricies a. Cras nec augue dolor. Phasellus at odio neque. Vestibulum bibendum velit sed mi consequat euismod. Nunc ultrices, urna sed lacinia condimentum, metus sem faucibus tellus</p>
+                    <span>Milton Uaiene</span>
+                </div>
+                <div class="uso-text">
+                    <i class="fa-solid fa-quote-left kmk"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum orci elit, sed rhoncus tortor ultricies a. Cras nec augue dolor. Phasellus at odio neque. Vestibulum bibendum velit sed mi consequat euismod. Nunc ultrices, urna sed lacinia condimentum, metus sem faucibus tellus</p>
+                    <span>Augusto Luis</span>
+                </div>
+            </div>
+            <div class="testemunha-img">
+                <img src="img/eu.jpg" class="uso-img" onclick="showReview()">
+                <img src="img/testimonial-2.jpg" class="uso-img active-img" onclick="showReview()">
+                <img src="img/testimonial-3.jpg" class="uso-img" onclick="showReview()">
+                <img src="img/eu.jpg" class="uso-img" onclick="showReview()">
+                <img src="img/testimonial-1.jpg" class="uso-img" onclick="showReview()">
+            </div>
+        </div>
+    </div>
+    </div>  
+
+  <!--============================== Contacto ==========================--> 
+
+   <section class="contact" id="contact">
+    <h2>Nossos Contactos</h2>
+    <div class="contact-area container">
+      <div class="contact-item">
+        <article class="contact-option">
+          <i class="fa-solid fa-envelope"></i>
+          <h4>Email</h4>
+          <h5>miltonaugusto137@gmail.com</h5>
+          <a href='#tu'>Enviar Menssagem</a>
+        </article>
+
+        <article class="contact-option">
+          <i class="fa-brands fa-facebook"></i>
+          <h4>Facebook</h4>
+          <h5>Facebook.com</h5>
+          <a href='https://www.facebook.com/miltonaugusto.torronto/'>Enviar Menssagem</a>
+        </article>
+
+        <article class="contact-option">
+          <i class="fa-brands fa-whatsapp"></i>
+          <h4>Whatsapp</h4>
+          <h5>(+258) 84 555 1452</h5>
+          <a href='https://api.whatsapp.com/send?phone+258845551452'>Enviar Menssagem</a>
+        </article>
+      </div>
+
+      <form action="https://formspree.io/f/xpznobvg" method="POST">
+        <input name='name' placeholder=' Nome Completo' required id='tu'/>
+        <input type="email" name='email' placeholder='Seu Email' required />
+        <textarea name='message' placeholder='Sua Menssagem' required rows='7'></textarea>
+        <button type='submit' class='btb' style="background-color: #ccc; color: #000;">Enviar Menssagem</button>
+      </form>
+    </div>
+  </section> 
+
+
+  <!--============================== Rodapé ==========================--> 
+
+  <div class="container-fluid text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" style="background-color: #489c79;">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <a href="index.html" class="navbar-brand" style="color:#fff;">
+            <h1 class="m-0 "><i class="fa fa-book-reader me-3"></i>SCHOOL</h1>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6" style="color: #000;">
+          <h3 class="text-white mb-4">Links Rápidos</h3>
+          <a class="btn btn-link text-white-50" href="sobre.html">Sobre Nós</a>
+          <a class="btn btn-link text-white-50" href="contacto.html">Contacte-nos</a>
+          <a class="btn btn-link text-white-50" href="classes.html">Turmas</a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h3 class="text-white mb-4">Localização</h3>
+          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Maputo, N. 2233</p>
+          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+258 84 000 0000</p>
+          <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social" id="icon-roda" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-social" id="icon-roda" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-social" id="icon-roda" href=""><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-outline-light btn-social" id="icon-roda" href=""><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h3 class="text-white mb-4">Bolentim</h3>
+          <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+          <div class="position-relative mx-auto" style="max-width: 400px;">
+            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+            <button type="button" class="btn py-2 position-absolute top-0 end-0 mt-2 me-2" style="background-color:#fff;">Subscrever</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <!--<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Nome Da Instituicao</a>, Todos direitos Reservados. 
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script> 
+</body>
+</html>
